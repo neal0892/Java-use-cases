@@ -27,7 +27,6 @@ public class Amar_excel {
 			String[] eachRow = new String[11];
 			hm = new TreeMap<String, Integer>();
 			while ((s = fb.readLine()) != null) {
-				// System.out.println(s);
 				eachRow = s.split(","); // took an entire now and converted to
 										// string array
 				// System.out.println("asdad" + eachRow.length + eachRow[0]);
@@ -40,7 +39,7 @@ public class Amar_excel {
 				} else {
 					if (temp != null) {
 						for (String s2 : temp)
-							System.out.print(s2 + " ,");
+							System.out.print(s2 + " ,");//added a comma after every string to make output csv
 						// }
 						System.out.println();
 					}
